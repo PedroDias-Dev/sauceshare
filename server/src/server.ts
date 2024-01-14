@@ -73,6 +73,14 @@ app.get("/files", checkSecretMiddleware, (req, res) => {
   res.send(formattedFiles);
 });
 
+app.get("/files/:name", checkSecretMiddleware, (req, res) => {
+  const { name } = req.params;
+
+  const file = fs.readFileSync(`public/${name}`);
+
+  res.send(file);
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
