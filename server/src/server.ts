@@ -4,7 +4,7 @@ import multer from "multer";
 import fs from "fs";
 
 const app = express();
-const PORT = 3000;
+const PORT = 3333;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -5,24 +5,20 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "PWA with Next 13",
-  description: "PWA application with Next 13",
+  title: "sauce-share",
+  description: "sauce-share fr",
   generator: "Next.js",
   manifest: "/manifest.json",
   keywords: ["nextjs", "nextjs13", "next13", "pwa", "next-pwa"],
   themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
   authors: [
-    { name: "Rajesh Prajapati" },
-    {
-      name: "Rajesh Prajapati",
-      url: "https://www.linkedin.com/in/raazeshp96/",
-    },
+    { name: "SIAD Corp" },
   ],
   viewport:
     "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
   icons: [
-    { rel: "apple-touch-icon", url: "icons/icon-128x128.png" },
-    { rel: "icon", url: "icons/icon-128x128.png" },
+    { rel: "apple-touch-icon", url: "icons/apple-touch-icon.png" },
+    { rel: "icon", url: "icons/favicon-16x16.png" },
   ],
 };
 
